@@ -1,6 +1,6 @@
-var HelloWorld = require('./HelloWorld.jsx');
+const ReactDOM = require("react-dom");
+const React = require("react");
 
+const Container = require("./container.jsx");
 
-var ReactDOM = require('react-dom');
-
-ReactDOM.render(<HelloWorld />, document.getElementById("main"));
+ReactDOM.render(<Container />, document.getElementById("main"));

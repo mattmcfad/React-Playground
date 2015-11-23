@@ -5,7 +5,7 @@ var babel = require('babelify');
 
 
 gulp.task('build', function () {
-	browserify("./src/index.jsx")
+	return browserify("./src/index.jsx")
 		.transform(babel, { presets: ["es2015", "react"]})
 		.bundle()
 		.pipe(source('index.js'))
